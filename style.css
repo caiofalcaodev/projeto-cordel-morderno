@@ -13,7 +13,8 @@
     --font-sri: "Sriracha", sans-serif; 
 }
 
-body { height: 2000px;
+body { min-height: 100vh;
+    font-family: var(--font-padrao);
 
 }
 
@@ -58,41 +59,51 @@ main {
 }
 
 main > p.primeirop {
-    padding-top: 70px;
+    padding-top: 65px;
     font-family: var(--font-sri);
     font-size: 35px;
-    padding-bottom: 100px;
+    padding-bottom: 65px;
 }
 
 main > p {
     line-height: 76px;
-    padding-left: 40px;
+    padding-left: 50px;
     font-family: var(--font-sri);
     font-size: 35px;
-    
+    padding-top: 65px;
 }
 
-section {
-    position: relative;
-    height: 700px;
-    background: black url('img/background001.jpg') no-repeat scroll;
+section.backgroundgeral {
+    max-height: 1864px;
+    max-width: 100%;
+    box-shadow: 10px 0px 10px 0px rgba(0, 0, 0, 0.329);
+}
+
+section#florjoana {
+    display: block;
+    max-height: 1864px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 50px;
+    background: black url('img/background001.jpg') right center no-repeat scroll;
     background-size: cover;
-    border-radius: 2px 2px rgba(0, 0, 0, 0.452);
+    background-attachment: fixed;
+    background-position-x: 100%;
+    background-position-y: 50%;
 }
 
-.boxcordel1 {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.178);
-    max-height: 540px;
-    max-width: 452px;
-    margin-top: 80px;
-    margin-bottom: 20px;
-    padding-left: 10px;
-    padding-right: 0px;
-    margin-left: 50px;
+.boxcordel {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.425);
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    line-height: 2em;
+    padding-left: 5px;
+    font-size: 3.5vw;
+    padding-right: 5px;
 }
 
-.boxcordel1 > p {
+.boxcordel > p {
     padding-left: 0px;
     color: white;
 }
@@ -102,4 +113,43 @@ article > p {
     padding-left: 40px;
     font-family: var(--font-sri);
     font-size: 35px;
+}
+
+section#book {
+    display: block;
+    max-height: 1864px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 50px;
+    margin-top: 50px;
+    background: rgba(0, 0, 0, 0.856) url('img/background002.jpg') center center no-repeat scroll;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: 100%;
+    background-position-y: 50%;
+}
+
+footer {
+    margin-top: 60px;
+    display: block;
+    background-color: black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+footer > p {
+    font-family: var(--font-padrao);
+    color: white;
+    text-align: center;
+    font-size: 1.08em;
+}
+
+footer > p > a {
+    text-decoration: none;
+    color: white;
+}
+
+footer > p > a:hover {
+    text-decoration: dashed;
+    color: rgb(141, 127, 127);
 }
