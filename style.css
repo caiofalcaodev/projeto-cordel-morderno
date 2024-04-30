@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
 * {
     padding: 0px; 
@@ -7,30 +8,37 @@
 }
 
 :root{
-    --font-padrao: arial, verdana, helvetica, sans-serif;
+    --font-padrao: verdana, helvetica, sans-serif;
     --font-passion: "Passion One", sans-serif;
+    --font-sri: "Sriracha", sans-serif; 
+}
+
+body { height: 2000px;
+
 }
 
 header {
-    height: 250px;
+    height: 280px;
     width: auto;
     background-color: black;
 }
 
-header h1 {
+header > h1 {
+    max-height: 110px;
     font-family: var(--font-passion);
     color: white;
     text-align: center;
-    font-size: 80px;
+    font-size: 110px;
     padding-top: 60px;
+    font-variant: small-caps;
 }
 
-header p {
+header > p {
     font-family: var(--font-padrao);
     color: rgb(161, 155, 155);
     text-align: center;
     font-size: 17px;
-    padding-top: 2px;
+    padding-top: 0px;
 }
 
 header a {
@@ -42,4 +50,56 @@ header a:hover{
     color: rgb(185, 184, 184);
     text-decoration: dashed;
     transition-duration: 0,5s;
+}
+
+main {
+    height: 100%;
+
+}
+
+main > p.primeirop {
+    padding-top: 70px;
+    font-family: var(--font-sri);
+    font-size: 35px;
+    padding-bottom: 100px;
+}
+
+main > p {
+    line-height: 76px;
+    padding-left: 40px;
+    font-family: var(--font-sri);
+    font-size: 35px;
+    
+}
+
+section {
+    position: relative;
+    height: 700px;
+    background: black url('img/background001.jpg') no-repeat scroll;
+    background-size: cover;
+    border-radius: 2px 2px rgba(0, 0, 0, 0.452);
+}
+
+.boxcordel1 {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.178);
+    max-height: 540px;
+    max-width: 452px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 0px;
+    margin-left: 50px;
+}
+
+.boxcordel1 > p {
+    padding-left: 0px;
+    color: white;
+}
+
+article > p {
+    line-height: 76px;
+    padding-left: 40px;
+    font-family: var(--font-sri);
+    font-size: 35px;
 }
