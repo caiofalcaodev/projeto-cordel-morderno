@@ -25,7 +25,7 @@ header {
 
 header > h1 {
     font-family: var(--font-passion);
-    font-size: 6em;
+    font-size: 8vw;
     padding-top: 60px;
     font-variant: small-caps;
 }
@@ -52,6 +52,7 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-size: 2vw;
 }
 
 section.externa {
@@ -61,16 +62,29 @@ section.externa {
 }
 
 section.image {
-    background-color: rgb(71, 71, 71);
+    background-color: rgb(0, 0, 0);
     color: white;
-    font-family: var(--font-sri);
-    background-image:'img/background001.jpg';
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.301) ;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.image > p {
-    background-color: rgba(0, 0, 0, 0.301);
-    width: 400px;
-    padding: 10px 10px;
+    display: inline-block;
+    font-family: var(--font-sri);
+    background-color: rgba(0, 0, 0, 0.541);
+    padding: 10px;
+    text-shadow: 2px 2px 0px black;
+}
+
+section#joana {
+    background-image: url('./img/background001.jpg');
+    background-position: right center;
+}
+
+section#book {
+    background-image: url('./img/background002.jpg');
+    background-position: center center;
 }
 
 footer {
